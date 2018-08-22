@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <android.support.v7.widget.CardView
     xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
+    android:layout_width="150dp"
     android:layout_height="wrap_content"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_margin="5dp"
@@ -11,30 +11,32 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal">
+        android:orientation="vertical">
 
         <de.hdodenhof.circleimageview.CircleImageView
             android:layout_margin="5dp"
-            android:layout_width="0dp"
-            android:layout_height="50dp"
-            android:layout_weight="0.2"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
             android:id="@+id/cview"
             android:src="@mipmap/ic_launcher_round"/>
 
         <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center">
+        <LinearLayout
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:layout_weight="0.7"
-            android:layout_gravity="center">
-
+            android:layout_weight="0.85"
+            android:orientation="vertical">
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:text="File Name"
                 android:textStyle="bold"
-                android:textSize="20sp"
+                android:textSize="15sp"
                 android:textColor="#FF0000"
                 android:id="@+id/name"/>
 
@@ -44,19 +46,23 @@
                 android:layout_gravity="center"
                 android:text="File Size"
                 android:textStyle="bold"
-                android:textSize="20sp"
+                android:textSize="15sp"
                 android:textColor="#0000FF"
                 android:id="@+id/size"/>
 
         </LinearLayout>
 
-        <de.hdodenhof.circleimageview.CircleImageView
-            android:layout_width="0dp"
-            android:layout_height="40dp"
-            android:layout_weight="0.1"
-            android:layout_gravity="center"
-            android:src="@drawable/ic_delete_sweep_black_24dp"
-            android:id="@+id/del"/>
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="0.15"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_delete_sweep_black_24dp"
+                android:id="@+id/del"/>
+
+        </LinearLayout>
+
+
 
     </LinearLayout>
 
